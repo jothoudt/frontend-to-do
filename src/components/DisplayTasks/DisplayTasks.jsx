@@ -2,8 +2,9 @@ import React from 'react'
 import {useSelector} from 'react-redux';
 
 function DisplayTasks(){
+    //get tasks from the store
     const tasks= useSelector((store)=>{return store.list})
-
+    //function to display tasks
     const displayAllTasks=()=>{
         let display=''
         if(!tasks.length){

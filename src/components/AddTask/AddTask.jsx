@@ -9,7 +9,8 @@ function AddTask(){
     const [task, setTask]=useState('')
     //function to take the task and send it to the database;
     const addNewTask=()=>{
-        dispatch({type:'ADD_NEW_TASK', payload: task})
+        dispatch({type:'ADD_NEW_TASK', payload:{task:task}})
+        alert('Task successfully added')
     }
     return(
         <div>

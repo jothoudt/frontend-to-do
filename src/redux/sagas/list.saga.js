@@ -4,6 +4,7 @@ import axios from 'axios';
 function* listSaga(){
     yield takeEvery('FETCH_TASKS', fetchTasks);
     yield takeEvery('ADD_NEW_TASK', addTasks);
+    yield takeEvery('COMPLETE_TASK', completeTask)
 }
 
 function* addTasks(action){
@@ -26,6 +27,16 @@ function* fetchTasks(){
     }
     catch(error){
         console.log('error in GET tasks', error)
+    }
+}
+function* completeTask(action){
+    try{
+        console.log('in Complete task',action.payload)
+        yield axios.put('/api/tasks/' + action.payload )
+        yield put({type:'FETCH_TASKS'})
+    }
+    catch(error){
+        console.log('error in complete task', error)
     }
 }
 

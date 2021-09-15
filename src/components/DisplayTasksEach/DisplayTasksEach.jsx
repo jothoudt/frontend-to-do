@@ -2,10 +2,12 @@ import React from 'react';
 
 function DisplayTasksEach({task}){
     return(
-        <div>
-            <p>{task.task}</p>
-            {task.completed ? <p>&#10003;</p> : <button>Complete</button>}
-        </div>
+        <>
+            <td>{task.task}</td>
+            <td>{task.date_added}</td>
+            {task.completed ? <td>&#10003;</td> : <td><button>Complete</button></td>}
+            {task.date_completed === null ? <td>Not yet completed</td> : <td>{task.date_completed}</td>}
+        </>
     )
 }
 

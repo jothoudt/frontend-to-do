@@ -23,7 +23,18 @@ function DisplayTasks({tasks}){
     }
     return(
         <div>
-            {displayAllTasks()}
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Date Added</th>
+                    <th>Completed?</th>
+                    <th>Date Completed</th>
+                </tr>
+                <tr>
+                {displayAllTasks()}
+                </tr>
+            </table>
+            
         </div>
     )
 }

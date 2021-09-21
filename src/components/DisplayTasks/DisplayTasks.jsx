@@ -10,12 +10,15 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 function DisplayTasks({tasks}){
-    //function to display tasks
+    //function to conditionally render taks to prevent racing issues
     const displayAllTasks=()=>{
+        //define display
         let display=''
+        //if there are no tasks or the tasks have not loaded yet
         if(!tasks){
             display= <h2>No tasks</h2>
         }
+        //if there are tasks, map through them and display them as rows in the table
         else{
             display=
             <>
@@ -28,6 +31,7 @@ function DisplayTasks({tasks}){
         }
         return display;
     }
+    //returns a table to display the tasks
     return(
         <Box border={1} borderColor="#1E3163" style={{marginLeft:"auto", marginRight:"auto", width:"80%", marginTop:'50px'}}>
             <Table>

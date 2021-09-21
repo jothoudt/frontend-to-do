@@ -5,6 +5,7 @@ function* listSaga(){
     yield takeEvery('FETCH_TASKS', fetchTasks);
     yield takeEvery('ADD_NEW_TASK', addTasks);
     yield takeEvery('COMPLETE_TASK', completeTask)
+    yield takeEvery('DELETE_TASK', deleteTask)
 }
 
 function* addTasks(action){
@@ -38,6 +39,11 @@ function* completeTask(action){
     catch(error){
         console.log('error in complete task', error)
     }
+}
+function* deleteTask(action){
+    console.log('in delete task')
+    yield axios.delete('/api/tasks/' + action.payload)
+    yield put({type:'FETCH_TASKS'})
 }
 
 export default listSaga;

@@ -10,15 +10,19 @@ function AddTask(){
     //function to take the task and send it to the database;
     const addNewTask=()=>{
         dispatch({type:'ADD_NEW_TASK', payload:{task:task}})
+        //clear the input
+        setTask("");
+        //notify that task has been added
         alert('Task successfully added')
     }
+    //returns a box with an input and button to add task
     return(
         <div>
             <Box border={1} borderColor="#F037A5" boxShadow={12} style={{width:"400px", marginTop:"50px", marginLeft:"auto", marginRight:"auto", padding:"25px"}}>
                 <h2>Add A Task:</h2>
                     <label>
                         <strong>Task Name:  </strong>
-                        <input type="text" onChange={(event)=>setTask(event.target.value)}></input>
+                        <input type="text" value={task} onChange={(event)=>setTask(event.target.value)}></input>
                     </label>
                 <div>
                     <Button style={{backgroundColor:"#F037A5", marginTop: "24px", fontSize: "large"}} onClick={addNewTask}>Add Task</Button>

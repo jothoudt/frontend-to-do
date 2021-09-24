@@ -32,10 +32,24 @@ function DisplayTasksEach({task}){
     //return a row of the task information
     return(
         <TableRow style={ task.completed ? {backgroundColor:'#F037A5'} : {backgroundColor:'#F8F8F8'}}>
-            <TableCell style={ task.completed ? {textDecoration:'line-through'} : {textDecoration:'none'}} align="right">{task.task}</TableCell>
-            <TableCell style={ task.completed ? {textDecoration:'line-through'} : {textDecoration:'none'}}  align="right">{task.date_added}</TableCell>
-            {task.completed ? <TableCell style={{color:'green', fontSize:"36px"}} align="right">&#10003;</TableCell> : <TableCell align="right"><Button onClick={completeTask}>Complete</Button></TableCell>}
-            {task.date_completed === null ? <TableCell align="right" >Not yet completed</TableCell> : <TableCell align="right">{dateFormat()}</TableCell>}
+            <TableCell style={ task.completed ? 
+                {textDecoration:'line-through',fontSize:"large", fontFamily:'Courgette, cursive'} : 
+                {textDecoration:'none', fontSize:"large", fontFamily:'Courgette, cursive'}} align="right">{task.task}
+            </TableCell>
+            <TableCell style={ task.completed ? 
+                {textDecoration:'line-through',fontSize:"large", fontFamily:'Courgette, cursive'} : 
+                {textDecoration:'none',fontSize:"large", fontFamily:'Courgette, cursive'}}  align="right">{task.date_added}
+            </TableCell>
+            {task.completed ? 
+                <TableCell style={{color:'green', fontSize:"36px"}} align="right">&#10003;</TableCell> : 
+                <TableCell align="right">
+                    <Button onClick={completeTask} style={{backgroundColor:"#1E3163", color:"#F8F8F8"}}>Complete</Button>
+                </TableCell>
+            }
+            {task.date_completed === null ? 
+                <TableCell style={{fontSize:"large", fontFamily:'Courgette, cursive'}} align="right" >Not yet completed</TableCell> : 
+                <TableCell align="right">{dateFormat()}</TableCell>
+            }
             <TableCell align="right"> <DeleteForeverIcon onClick={deleteThisTask} style={{fontSize:"36px"}} /> </TableCell>
         </TableRow>
     )

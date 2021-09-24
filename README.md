@@ -1,8 +1,8 @@
-## React-Redux To-Do App Front-End
+# React-Redux To-Do App Front-End
 
-# Description
+## Description
 
-This application was build with React, Redux, and Material Ui. This is the front-end to a full CRUD application.
+This application was built with React, Redux, and Material Ui. This is the front-end to a full CRUD application.
 You have the ability to create, read, update and delete tasks. There will be a few different back-end applications in different languages that
 will serve this application.
 
@@ -14,7 +14,7 @@ Back-End Applications associated with this application:
 
 
 
-# To get started
+## To get started
 
 - npm install
 

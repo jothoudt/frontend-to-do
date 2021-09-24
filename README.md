@@ -6,6 +6,8 @@ This application was built with React, Redux, and Material Ui. This is the front
 You have the ability to create, read, update and delete tasks. There will be a few different back-end applications in different languages that
 will serve this application.
 
+![App Photo](public/photo1.png)
+
 Back-End Applications associated with this application:
 ---
     

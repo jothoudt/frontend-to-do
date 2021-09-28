@@ -60,7 +60,7 @@ function DisplayTasksEach({task}){
         <TableRow style={ task.completed ? {backgroundColor:'#F037A5'} : {backgroundColor:'#F8F8F8'}}>
             <TableCell style={ task.completed ? 
                 {textDecoration:'line-through',fontSize:"large", fontFamily:'Courgette, cursive'} : 
-                {textDecoration:'none', fontSize:"large", fontFamily:'Courgette, cursive'}} align="right">{task.task}
+                {textDecoration:'none', fontSize:"large", fontFamily:'Courgette, cursive'}}>{task.task}
             </TableCell>
             <TableCell style={ task.completed ? 
                 {textDecoration:'line-through',fontSize:"large", fontFamily:'Courgette, cursive'} : 

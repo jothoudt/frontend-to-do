@@ -37,7 +37,7 @@ function DisplayTasks({tasks}){
             <Table>
                 <TableHead style={{backgroundColor:"#1E3163"}}>
                     <TableRow border={1} borderColor="#1E3163">
-                        <TableCell align="right" style={{color:"#f8f8f8"}}>Task</TableCell>
+                        <TableCell style={{color:"#f8f8f8"}}>Task</TableCell>
                         <TableCell align="right" style={{color:"#f8f8f8"}}>Date Added</TableCell>
                         <TableCell align="right" style={{color:"#f8f8f8"}}>Completed?</TableCell>
                         <TableCell align="right" style={{color:"#f8f8f8"}}>Date Completed</TableCell>

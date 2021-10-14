@@ -11,7 +11,7 @@ function* listSaga(){
 function* addTasks(action){
     try{
         console.log("in POST tasks")
-        yield axios.post('/api/tasks', action.payload)
+        yield axios.post('/api/tasks/', action.payload)
         //get updated task list after adding task
         yield put({type:'FETCH_TASKS'})
     }   //end try

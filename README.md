@@ -14,6 +14,7 @@ Back-End Applications associated with this application:
 [Node/Express](https://github.com/jothoudt/backend-todo-node-express)   
 [Python/Flask](https://github.com/jothoudt/python-to-do-backend)
 [Java/Spring](https://github.com/jothoudt/spring-backend-todo) 
+[Go](https://github.com/jothoudt/go-backend-todo)
 
 
 
@@ -21,5 +22,9 @@ Back-End Applications associated with this application:
 ## To get started
 
 - npm install
+
+- Select one of the back-end REST-api applications listed above
+
+- Follow the instructions provided in the back-end repository to start the backend application
 
 - npm start

@@ -15,7 +15,7 @@ function DisplayTasks({tasks}){
         //define display
         let display=''
         //if there are no tasks or the tasks have not loaded yet
-        if(!tasks){
+        if(!tasks || tasks.length === 0){
             display= <h2>No tasks</h2>
         }
         //if there are tasks, map through them and display them as rows in the table

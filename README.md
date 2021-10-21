@@ -8,7 +8,7 @@ will serve this application.
 
 ![App Photo](public/new_todo_photo.png)
 
-I Also have a React Native version of this application located [here](https://github.com/jothoudt/todo-react-native)
+
 
 Back-End Applications associated with this application:
 ---

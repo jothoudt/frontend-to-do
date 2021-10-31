@@ -19,6 +19,10 @@ Back-End Applications associated with this application:
 - [Go](https://github.com/jothoudt/go-backend-todo)
 - [Ruby on Rails](https://github.com/jothoudt/backend-todo-rails)
 
+I also have other to-lists built with different technologies
+---
+- [TypeScript/React/Redux/Node/Express/PostgreSQL](https://github.com/jothoudt/typescript-to-do)
+- [React Native]((https://github.com/jothoudt/todo-react-native))
 
 ## To get started
 

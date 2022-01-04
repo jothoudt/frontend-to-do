@@ -23,7 +23,7 @@ Back-End Applications associated with this application:
 I also have other to-lists built with different technologies
 ---
 - [TypeScript/React/Redux/Node/Express/PostgreSQL](https://github.com/jothoudt/typescript-to-do)
-- [React Native]((https://github.com/jothoudt/todo-react-native))
+- [React Native](https://github.com/jothoudt/todo-react-native)
 
 ## To get started
 
